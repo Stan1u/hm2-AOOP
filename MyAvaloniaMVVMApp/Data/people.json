@@ -1,0 +1,22 @@
+{
+    "Teachers": [
+        {
+            "Id": 1,
+            "FirstName": "John",
+            "LastName": "Doe",
+            "Login": "jdoe",
+            "Password": "password123",
+            "Subject": "Mathematics"
+        }
+    ],
+    "Students": [
+        {
+            "Id": 1,
+            "FirstName": "Jane",
+            "LastName": "Doe",
+            "Login": "jane",
+            "Password": "password456",
+            "EnrolledSubjects": ["Math", "Science"]
+        }
+    ]
+}

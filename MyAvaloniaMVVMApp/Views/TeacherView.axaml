@@ -1,0 +1,15 @@
+
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="MyAvaloniaMVVMApp.Views.TeacherView"
+        xmlns:vm="clr-namespace:MyAvaloniaMVVMApp.ViewModels"
+        x:DataType="vm:TeacherViewModel"
+        Title="Teacher View"
+        Width="400"
+        Height="300">
+    <StackPanel>
+        <TextBlock Text="{Binding FullName}" FontSize="20" />
+        <TextBlock Text="Przedmiot:" FontSize="16" />
+        <TextBlock Text="{Binding Subject}" FontSize="16" />
+    </StackPanel>
+</Window>

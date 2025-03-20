@@ -1,0 +1,16 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="MyAvaloniaMVVMApp.Views.StudentView"
+        x:DataType="vm:StudentViewModel"
+        xmlns:vm="clr-namespace:MyAvaloniaMVVMApp.ViewModels"
+
+        Title="Student View"
+        Width="400"
+        Height="300">
+    <StackPanel>
+        <TextBlock Text="{Binding FullName}" FontSize="20" />
+        <TextBlock Text="Zapisane przedmioty:" FontSize="16" />
+        <ListBox ItemsSource="{Binding EnrolledSubjects}" />
+
+    </StackPanel>
+</Window>

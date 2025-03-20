@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       x:Class="MyAvaloniaMVVMApp.Views.LoginView"
+       xmlns:vm="clr-namespace:MyAvaloniaMVVMApp.ViewModels"
+
+     x:DataType="vm:LoginViewModel"
+
+        Title="Login"
+        Width="300"
+        Height="200">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="10">
+        <TextBox Watermark="Login" Text="{Binding Login}" />
+        <TextBox Watermark="Password" Text="{Binding Password}" PasswordChar="*" />
+        <Button Content="Login" Command="{Binding LoginCommand}" />
+        <TextBlock Text="{Binding ErrorMessage}" Foreground="Red" />
+    </StackPanel>
+</Window>

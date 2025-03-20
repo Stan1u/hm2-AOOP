@@ -1,0 +1,10 @@
+20.03.2025 17:17:09: Rozpoczęcie logowania...
+20.03.2025 17:17:10: Nieudana próba logowania: admin
+20.03.2025 17:18:21: Rozpoczęcie logowania...
+20.03.2025 17:18:21: Zalogowano użytkownika: Admin Admin
+20.03.2025 17:18:21: Nowe okno otwarte.
+20.03.2025 17:18:21: Okno logowania zamknięte.
+20.03.2025 17:23:51: Rozpoczęcie logowania...
+20.03.2025 17:23:51: Zalogowano użytkownika: Admin Admin
+20.03.2025 17:23:51: Nowe okno otwarte.
+20.03.2025 17:23:51: Zmieniono główne okno aplikacji.

@@ -1,0 +1,14 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="MyAvaloniaMVVMApp.Views.AdminView"
+        xmlns:vm="clr-namespace:MyAvaloniaMVVMApp.ViewModels"
+
+        x:DataType="vm:AdminViewModel"
+        Title="Admin View"
+        Width="600"
+        Height="400">
+    <StackPanel>
+        <ListBox ItemsSource="{Binding Teachers}" DisplayMemberBinding="{Binding FirstName}" />
+<ListBox ItemsSource="{Binding Students}" DisplayMemberBinding="{Binding FirstName}" />
+    </StackPanel>
+</Window>
