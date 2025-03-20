@@ -57,7 +57,7 @@ namespace MyAvaloniaMVVMApp.ViewModels
 
             Person? loggedInUser = null;
 
-            // Sprawdź nauczycieli
+            
             if (people.Teachers != null)
             {
                 foreach (var teacher in people.Teachers)
@@ -70,7 +70,7 @@ namespace MyAvaloniaMVVMApp.ViewModels
                 }
             }
 
-            // Sprawdź uczniów
+            
             if (loggedInUser == null && people.Students != null)
             {
                 foreach (var student in people.Students)
@@ -83,13 +83,13 @@ namespace MyAvaloniaMVVMApp.ViewModels
                 }
             }
 
-            // Sprawdź, czy to admin
+            
             if (loggedInUser == null && Login == "admin" && Password == "admin123")
             {
                 loggedInUser = new Person { FirstName = "Admin", LastName = "Admin" };
             }
 
-            // Jeśli użytkownik został znaleziony
+            
             if (loggedInUser != null)
             {
                 Log($"Zalogowano użytkownika: {loggedInUser.FirstName} {loggedInUser.LastName}");
@@ -123,7 +123,7 @@ namespace MyAvaloniaMVVMApp.ViewModels
                     Log("Nowe okno otwarte.");
                     nextWindow.Show();
 
-                    // Zamień główne okno aplikacji zamiast je zamykać
+                
                     if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
                     {
                         desktop.MainWindow = nextWindow;
