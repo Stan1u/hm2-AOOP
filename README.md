@@ -70,3 +70,6 @@ MyAvaloniaMVVMApp is a desktop application built using the Avalonia framework, f
   - **Constructors**:
     - `TeacherView()`: Initializes the component.
     - `TeacherView(Teacher teacher)`: Initializes the component and sets the `DataContext` to a new `TeacherViewModel`.
+
+##### Note about issues
+Couldn't solve the problem with infinite loop which occures when login button is clicked. Test should work if the issue was solved. I was trying AI to cluch the situaton but nither chatGPT, Deepseek or Blackbox could find a way to repair it. Project included all base requirements + admin (works differently than described in requirements but I didnt do it the way it was described cuz there is infinite loop anyway) + Tests which worked but at point when the loop occured for the first time they stopped working (I guess that makes sens). Hope thats enough for some points and sry for making u check this mess. Have a nice day!
